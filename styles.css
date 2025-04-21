@@ -1,0 +1,150 @@
+/* Modern monogram typography with minimal styling */
+body {
+    font-family: "SF Mono", Menlo, Monaco, "Courier New", monospace;
+    line-height: 1.6;
+    color: #111;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+/* Name header */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+/* Pixel font name styling */
+.name-container {
+    margin-bottom: 2rem;
+}
+
+.pixel-name {
+    font-family: "Press Start 2P", cursive !important;
+    font-size: 1rem;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    line-height: 1.8;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.pixel-emoji {
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.2rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Pixelated image for the G */
+.pixel-img {
+    height: 1em;
+    width: auto;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 0.05em;
+}
+
+/* Section headers */
+h2 {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Sidebar navigation */
+.sidebar {
+    float: left;
+    width: 25%;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.nav-links li {
+    margin-bottom: 1rem;
+}
+
+.nav-links a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+/* Highlighted tag */
+.new-tag {
+    background-color: #d4d4d4;
+    padding: 0.1rem 0.3rem;
+    margin-left: 0.5rem;
+    font-size: 0.8rem;
+}
+
+/* Main content */
+.main-content {
+    float: right;
+    width: 70%;
+}
+
+/* Links in content */
+.main-content a {
+    color: #111;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.main-content a:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+footer {
+    clear: both;
+    padding-top: 3rem;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
+}
+
+/* Clearing floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout */
+@media (max-width: 700px) {
+    .sidebar,
+    .main-content {
+        float: none;
+        width: 100%;
+    }
+
+    .sidebar {
+        margin-bottom: 2rem;
+    }
+}
+
+.main-content p {
+    text-align: justify;
+}
+
+/* Keep headings left-aligned */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+    text-align: left;
+}
